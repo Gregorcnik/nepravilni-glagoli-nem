@@ -1,5 +1,15 @@
-var s =
-          [["be", "was/were", "been", "biti"], ["become", "became", "become", "postati"], ["begin", "began", "begun", "začeti"], ["bite", "bit", "bitten", "ugrizniti"], ["blow", "blew", "blown", "pihati"], ["break", "broke", "broken", "zlomiti"], ["bring", "brought", "brought", "prinesti"], ["build", "built", "built", "zgraditi"], ["burn", "burnt", "burnt", "opeči"], ["buy", "bought", "bought", "kupiti"], ["can", "could", "/", "znati"], ["catch", "caught", "caught", "ujeti"], ["choose",  "chose", "chosen", "izbrati"], ["come", "came", "come", "priti"], ["cost", "cost", "cost", "imeti ceno"], ["cut", "cut", "cut", "rezati"], ["dig", "dug", "dug", "kopati"], ["do", "did", "done", "narediti"], ["draw", "drew", "drawn", "narisati"], ["dream", "dreamt", "dreamt", "sanjati"], ["drink", "drank", "drunk", "piti"], ["drive", "drove", "driven", "voziti se"], ["eat", "ate", "eaten", "jesti"], ["fall", "fell", "fallen", "pasti"], ["feed", "fed", "fed", "krmiti"], ["feel", "felt", "felt", "čutiti"], ["fight", "fought", "fought", "boriti se"], ["find", "found", "found", "najti"], ["fly", "flew", "flown", "leteti"], ["forget", "forgot", "forgotten", "pozabiti"], ["freeze", "froze", "frozen", "zmrzniti"], ["get", "got", "got", "dobiti"], ["give", "gave", "given", "dati"], ["go", "went", "gone", "iti"], ["grow", "grew", "grown", "rasti"], ["hang", "hung", "hung", "viseti"], ["have", "had", "had", "imeti"], ["hear", "heard", "heard", "slišati"], ["hide", "hid", "hidden", "skriti"], ["hit", "hit", "hit", "udariti"], ["hurt", "hurt", "hurt", "raniti"], ["keep", "kept", "kept", "ohraniti"], ["know", "knew", "known", "vedeti"], ["leave", "left", "left", "zapustiti"], ["learn", "learnt", "learnt", "učiti se"], ["lend", "lent", "lent", "posoditi"], ["let", "let", "let", "pustiti"], ["lie", "lay", "lain", "ležati"], ["lose", "lost", "lost", "izgubiti"], ["make", "made", "made", "izdelati"], ["mean", "meant", "meant", "pomeniti"], ["meet", "met", "met", "srečati"], ["must", "had to", "had to", "morati"], ["pay", "paid", "paid", "plačati"], ["put", "put", "put", "položiti"], ["read", "read", "read", "brati"], ["ride", "rode", "ridden", "jahati"], ["ring", "rang", "rung", "zvoniti"], ["run", "ran", "run", "teči"], ["say", "said", "said", "reči"], ["see", "saw", "seen", "videti"], ["sell", "sold", "sold", "prodati"], ["send", "sent", "sent", "poslati"], ["set", "set", "set", "pripraviti"], ["shake", "shook", "shaken", "stresti"], ["shoot", "shot", "shot", "streljati"], ["shut", "shut", "shut", "zapreti"], ["sing", "sang", "sung", "peti"], ["sink", "sank", "sunk", "potopiti"], ["sit", "sat", "sat", "sedeti"], ["sleep", "slept", "slept", "spati"], ["speak", "spoke", "spoken", "govoriti"], ["spend", "spent", "spent", "porabiti"], ["stand", "stood", "stood", "stati"], ["steal", "stole", "stolen", "ukrasti"], ["stick", "stuck", "stuck", "nalepiti"], ["sweep", "swept", "swept", "pometati"], ["swim", "swam", "swum", "plavati"], ["take", "took", "taken", "vzeti"], ["teach", "taught", "taught", "učiti"], ["tell", "told", "told", "povedati"], ["think", "thought", "thought", "misliti"], ["throw", "threw", "thrown", "vreči"], ["understand", "understood", "understood", "razumeti"], ["wake", "woke", "woken", "zbuditi"], ["wear", "wore", "worn", "nositi"], ["win", "won", "won", "zmagati"], ["write", "wrote", "written", "pisati"]];
+var s = [
+  ["backen", "buk", "gebacken", "peči"], 
+  ["beginnen", "begann", "begonnen", "začeti"], 
+  ["bleiben", "bleib", "gebleiben", "ostati"],
+  ["brennen", "brannte", "gebrannt", "goreti"],
+  ["bringen", "brachte", "gebracht", "prinesti"],
+  ["denken", "dacthe", "gedacht", "misliti"], 
+  ["essen", "aß", "gegessen", "jesti"], 
+  ["fahren", "fuhr", "gefahren", "voziti"], 
+  ["fallen", "fiel", "gefallen", "pasti"],
+  ["fangen", "fing", "gefangen", "loviti"]
+];
 
 var a = s;
 a = premesaj(a);
@@ -54,7 +64,7 @@ function narediSeznamBesed(seznam, funkcijaZaStolpec) {
   return [prav, narobe];
 }
 
- function resi(seznamResitev) {
+function resi(seznamResitev) {
   let seznam = document.getElementById('seznamBesed').children[1];
   let vrstice = seznam.children;
   for (var vrstica = 0; vrstica < vrstice.length; vrstica++) {
@@ -104,7 +114,7 @@ function prikazi(id) {
   document.getElementById(id).style.visibility = 'visible';
 }
 
- function skrij(id) {
+function skrij(id) {
   document.getElementById(id).style.visibility = 'hidden';
 }
 
