@@ -1,7 +1,7 @@
 var s = [
   ["backen", "buk", "gebacken", "peči"], 
   ["beginnen", "begann", "begonnen", "začeti"], 
-  ["bleiben", "bleib", "gebleiben", "ostati"],
+  ["bleiben", "blieb", "gebleiben", "ostati"],
   ["brennen", "brannte", "gebrannt", "goreti"],
   ["bringen", "brachte", "gebracht", "prinesti"],
   ["denken", "dacthe", "gedacht", "misliti"], 
@@ -22,7 +22,7 @@ var stStolpca = -1; //-1 means nakljucno, 1 means first column itd.
 document.getElementById('seznamBesed').innerHTML = narediSeznamBesed([a[0]], function f() {return nakljucno(4)-1;});
 
 function narediSeznamBesed(seznam, funkcijaZaStolpec) {
-  var vrnitev = "<tbody><tr style=\'position: sticky; top: -1.5px; background-color: white;\'><td><b>Infitive</b><br><i>nedoločnik</i></td><td><b>Past Tense</b><br><i>preteklik</i></td><td><b>Past Participle</b><br><i>pretekli deležnik</i></td><td><b></b><br><i>slovenski prevod</i></td></tr></tbody>";
+  var vrnitev = "<tbody><tr style=\'position: sticky; top: -1.5px; background-color: white;\'><td><b>Nedoločnik</b></td><td><b>Preteklik</b></td><td><b>Perfekt</b></td><td><b>slovenski prevod</td></tr></tbody>";
   for (var vrstica = 0; vrstica < seznam.length; vrstica++) {
     vrnitev=vrnitev+'<tr>';
     izpisniStolpec = funkcijaZaStolpec();
@@ -39,7 +39,7 @@ function narediSeznamBesed(seznam, funkcijaZaStolpec) {
   return vrnitev;
 }
 
- function preveri(seznamResitev) {
+function preveri(seznamResitev) {
   let narobe = 0;
   let prav = 0;
   let seznam = document.getElementById('seznamBesed').children[1];
@@ -77,19 +77,19 @@ function resi(seznamResitev) {
   }
 }
 
- function nakljucno(a) {
+function nakljucno(a) {
   /*vrne nakljucno celo stevilo med 1 in a vkljucno*/
   let x = Math.random();
   return Math.floor(x * a + 1);
 }
 
- function enako(a, b) {
+function enako(a, b) {
   a = a.toUpperCase();
   b = b.toUpperCase();
   return (a == b);
 }
 
- function premesaj(seznam) {
+function premesaj(seznam) {
   let vrnitev = [];
   let l = seznam.length;
   for (var i = 0; i < l; i++) {
@@ -100,12 +100,12 @@ function resi(seznamResitev) {
   return vrnitev;
 }
 
- function removeAt(int, seznam) {
+function removeAt(int, seznam) {
   seznam.splice(int, 1);
   return seznam;
 }
 
- function nastaviStevecTock(p, v) {
+function nastaviStevecTock(p, v) {
   document.getElementById('steviloNalog').innerText = v;
   document.getElementById('pravilno').innerText = p;
 }
