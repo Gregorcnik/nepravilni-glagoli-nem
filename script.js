@@ -4,7 +4,7 @@ var s = [
   ["bleiben", "blieb", "geblieben", "ostati"],
   ["brennen", "brannte", "gebrannt", "goreti"],
   ["bringen", "brachte", "gebracht", "prinesti"],
-  ["denken", "dacthe", "gedacht", "misliti"], 
+  ["denken", "dachte", "gedacht", "misliti"], 
   ["essen", "aß", "gegessen", "jesti"], 
   ["fahren", "fuhr", "gefahren", "voziti"], 
   ["fallen", "fiel", "gefallen", "pasti"],
