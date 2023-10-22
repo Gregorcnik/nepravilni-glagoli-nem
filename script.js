@@ -1,7 +1,7 @@
 var s = [
   ["backen", "buk", "gebacken", "peči"], 
   ["beginnen", "begann", "begonnen", "začeti"], 
-  ["bleiben", "blieb", "gebleiben", "ostati"],
+  ["bleiben", "blieb", "geblieben", "ostati"],
   ["brennen", "brannte", "gebrannt", "goreti"],
   ["bringen", "brachte", "gebracht", "prinesti"],
   ["denken", "dacthe", "gedacht", "misliti"], 
