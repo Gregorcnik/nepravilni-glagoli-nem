@@ -8,7 +8,12 @@ var s = [
   ["essen", "aß", "gegessen", "jesti"], 
   ["fahren", "fuhr", "gefahren", "voziti"], 
   ["fallen", "fiel", "gefallen", "pasti"],
-  ["fangen", "fing", "gefangen", "loviti"]
+  ["fangen", "fing", "gefangen", "loviti"], 
+  ["fallen", "fiel", "gefallen", "pasti"], 
+  ["finden", "fand", "gefungen", "najti"],
+  ["fliegen", "flog", "geflogen", "leteti"],
+  ["geben", "gab", "gegeben", "dati"],
+  ["gehen", "ging", "gegangen", "iti"]
 ];
 
 var a = s;
